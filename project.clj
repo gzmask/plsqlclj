@@ -8,4 +8,6 @@
                  ;[org.clojure/java.jdbc "0.3.6"]
                  [org.clojure/java.jdbc "0.3.0-alpha4"]
                  ;[org.clojure/java.jdbc "0.3.7-SNAPSHOT"]
-                 [org.clojure/tools.cli "0.3.1"]])
+                 [org.clojure/tools.cli "0.3.1"]]
+  :plugins [[lein-localrepo "0.5.3"]]
+  :resource-paths ["lib/ojdbc6.jar"])

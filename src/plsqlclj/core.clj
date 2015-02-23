@@ -8,12 +8,12 @@
   [x]
   (println x "Hello, World!"))
 
-(def SQLDB {:classname "sun.jdbc.odbc.JdbcOdbcDriver"
-            :subprotocol "odbc"
-            ;:subname "TEST"
-            :subname "BANNER"
-            :user "xxx"
-            :password "xxxx"})
+(def SQLDB {:classname "oracle.jdbc.OracleDriver"
+            :subprotocol "oracle:oci"
+            :subname "@TEST"
+            ;:subname "@DEVL"
+            :user "lei203"
+            :password "IstandBehindYourMother"})
 
 (def rs (j/query SQLDB ["select * from UOFREXEC.Y_CAT_SCHD WHERE ROWNUM <=5"]))
 
